@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.background{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+}
+.container-left{
+    width: 50%;
+    background: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px; 
+}
+
+.container-right{
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 40px 0px;
+    padding-left: 40px;
+    gap: 25px;
+    border-radius: 0px 10px 10px 0px;
+}
+.perfume{
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.title{
+    padding-right: 50px;
+    color: hsl(212, 21%, 14%);
+    line-height: 35px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.about{
+    padding-right: 50px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    font-family: 'Fraunces', serif;
+
+}
+.price_1{
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+
+}
+.price_2{
+    text-decoration:line-through;
+    color: hsl(228, 12%, 48%);
+}
+.button{
+    text-align: center;
+    background:hsl(158, 36%, 37%) ;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    width: 220px;
+}
+@media (max-width:600px){
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        /* justify-content: center; */
+        align-items: center;
+        /* flex-direction: column; */
+        /* height: 100px; */
+        width:350px ;
+    }
+    .container-left{
+        background: url(./images/image-product-mobile.jpg);
+        height: 300px;
+        width:100% ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+    .container-right{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        padding-left: 20px;
+    }
+    .about{
+        padding-right: 30px;
+
+    }
+    .button{
+        width: 300px;
+    }
+}
